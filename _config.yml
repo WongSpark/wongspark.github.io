@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://wongspark.github.io/
+url: http://wongspark.github.io
 date_format: "ordinal"
 title: 码志
 subtitle: "打码改变人生"
@@ -78,7 +78,7 @@ collections:
         output: true
         permalink: /wiki/:path/
 
-repository: mzlogin/mzlogin.github.io
+repository: WongSpark/wongspark.github.io
 
 # ---------------- #
 #      Comments    #
@@ -89,10 +89,10 @@ comments_provider: gitment
 # !!!Important!!! Please modify infos below to yours
 # https://disqus.com
 disqus:
-    username: mzlogin
+    username: WongSpark
 # https://imsun.net/posts/gitment-introduction/
 gitment:
-    owner: mzlogin
+    owner: WongSpark
     repo: blog-comments
     oauth:
         client_id: d2e1cbbd298958076462
