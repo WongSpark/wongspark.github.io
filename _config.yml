@@ -4,10 +4,10 @@
 baseurl:
 url: https://wongspark.github.io
 date_format: "ordinal"
-title: 码志
-subtitle: "打码改变人生"
-description: "马壮的个人博客"
-keywords: 码志, Zhuang Ma, mzlogin, mazhuang
+title: Spark
+subtitle: "coder,giser and almost a cooker"
+description: "coder,giser and almost a cooker"
+keywords: Spark, Spark Wong
 favicon: /favicon.ico
 timezone: Asia/Shanghai
 encoding: "utf-8"
@@ -17,11 +17,11 @@ side_bar_repo_limit: 5
 #      Author      #
 # ---------------- #
 author: Zhuang Ma
-organization: zkh360.com
-organization_url: http://www.zkh360.com
-github_username: mzlogin
-location: Wuhan, China
-email: chumpma@gmail.com
+organization: wwx
+organization_url: 
+github_username: WongSpark
+location: Jinan, China
+email: www.820767125@qq.com
 
 # ---------------- #
 #    Navigation    #
