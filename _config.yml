@@ -9,15 +9,15 @@ subtitle: "coder,giser and almost a cooker"
 description: "coder,giser and almost a cooker"
 keywords: Spark, Spark Wong
 favicon: /favicon.ico
-timezone: Asia/Shanghai
+timezone: Asia/Jinan
 encoding: "utf-8"
 side_bar_repo_limit: 5
 
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Zhuang Ma
-organization: wwx
+author: Spark Wong
+organization: 自由者的风
 organization_url: 
 github_username: WongSpark
 location: Jinan, China
