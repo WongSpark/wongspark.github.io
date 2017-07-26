@@ -1,14 +1,14 @@
 ---
 layout: page
 title: About
-description: coder,giser and almost a cooker
+description: coder,giser and almost a cooker.
 keywords: Spark Wong
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
-coder,giser and almost a cooker
+coder,giser and almost a cooker.
 
 ## 联系
 
