@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+## Welcome to Spark Wong GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/WongSpark/wongspark.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+参加工作已经有一段时间了，此前一直都是处在‘狂奔’的状态，为学习新的技能，为追寻长久的方向，一路风风火火的过来，感觉也不错。
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+前进的感觉虽然让人着迷，但是，时常回顾一下来时路也是必要的。毕竟路走的太远就会迷失过去的自己。
 
-### Markdown
+### Abstract
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+一个追寻着的技术博客，写技术文也写散文，写代码也写心情，写目标也写心路
 
-```markdown
-Syntax highlighted code block
+```Abstract
 
-# Header 1
-## Header 2
-### Header 3
+- 总结已学习的技术
+- 学习新技术
+- 随时发点牢骚
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/WongSpark/wongspark.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
