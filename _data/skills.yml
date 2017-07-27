@@ -12,16 +12,13 @@
       - Java
       - JavaScript
       - Python
+      - MongoDB
+      - Mysql
+      - Oracle
+      - Sptialite
 
 - name: Mobile Developer Keywords
   keywords:
       - Android
       - Vue
       - Hybrid App
-
-- name: Database And GeoDatabase
-  keywords
-      - MongoDB
-      - Mysql
-      - Oracle
-      - Sptialite
