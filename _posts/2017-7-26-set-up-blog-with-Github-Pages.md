@@ -59,7 +59,7 @@ keywords: Github pages, 博客
    因为 Disqus 处理用户名与域名白名单的策略存在缺陷，请一定将 disqus.username 修改成你自己的。
 
 4. 删除无用文件
-   
+
    如下文件夹中除了 template.md 文件外，都可以全部删除，然后添加你自己的内容。
 
    * _posts 文件夹中是我已发布的博客文章。
@@ -76,7 +76,7 @@ keywords: Github pages, 博客
    pages/about.md 文件内容对应网站的「关于」页面，里面的内容多为个人相关，将它们替换成你自己的信息，包括 _data 目录下的 skills.yml 和 social.yml 文件里的数据。
 
 ### 注意
-   在config.yml中，有几处修改需要尤其注意，如图所示的disqus username需要自己到https://disqus.com上去申请。 
+   在config.yml中，有几处修改需要尤其注意，如图所示的disqus username需要自己到https://disqus.com上去申请。
 
 ![OpenGrok Search and Browse](/images/posts/tools/setup-blog-using-github/5.png)
 
@@ -84,9 +84,9 @@ keywords: Github pages, 博客
 
 ![OpenGrok Search and Browse](/images/posts/tools/setup-blog-using-github/6.png)
 
-   页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。（红线圈出的部分本应该有一个初始化按钮，点击一下即可）之后其他用户即可在该页面发表评论。
-   
+   页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。之后其他用户即可在该页面发表评论。
+![OpenGrok Search and Browse](/images/posts/tools/setup-blog-using-github/9.png)
+
+![OpenGrok Search and Browse](/images/posts/tools/setup-blog-using-github/8.png)
+
 ![OpenGrok Search and Browse](/images/posts/tools/setup-blog-using-github/7.png)
-   
-
-
