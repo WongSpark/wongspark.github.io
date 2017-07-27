@@ -85,6 +85,7 @@ keywords: Github pages, 博客
 ![OpenGrok Search and Browse](/images/posts/tools/setup-blog-using-github/6.png)
 
    页面发布后，你需要访问页面并使用你的 GitHub 账号登录（请确保你的账号是第二步所填 repo 的 owner），点击初始化按钮。之后其他用户即可在该页面发表评论。
+   
 ![OpenGrok Search and Browse](/images/posts/tools/setup-blog-using-github/9.png)
 
 ![OpenGrok Search and Browse](/images/posts/tools/setup-blog-using-github/8.png)
