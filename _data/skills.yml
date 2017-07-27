@@ -1,20 +1,27 @@
+- name: GIS Keywords
+  keywords:
+      - ArcGIS
+      - ArcEngine
+      - ArcServer
+      - GeoServer
+      - MapServer
+      - Openlayers
+
 - name: Software Engineer Keywords
   keywords:
-      - GIS
       - Java
       - JavaScript
       - Python
-      - Design Patterns
 
 - name: Mobile Developer Keywords
   keywords:
       - Android
-      - Reverse Engineering
+      - Vue
+      - Hybrid App
 
-- name: Windows Developer Keywords
-  keywords:
-      - Win32 SDK
-      - DuiLib
-      - WTL
-      - COM
-      - WinDbg
+- name: Database And GeoDatabase
+  keywords
+      - MongoDB
+      - Mysql
+      - Oracle
+      - Sptialite
