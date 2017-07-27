@@ -34,7 +34,7 @@ keywords: WGS84, GCJ02 ,polygon shp
 
    WGS84转GCJ02的加密算法可以从网上搜索到，经过测试，精度尚可，大概在10m级别（以高德地图为例，使用的数据的原坐标系是WGS84坐标系，经过加密形成的GCJ02坐标系数据）。
 
-##实践过程
+## 实践过程
 ### 1. 需求说明
 
    欲使用高德地图 android SDK开发某APP的一个功能模块：手机定位用户位置，将距离用户最近的建筑物面高亮显示。
@@ -102,7 +102,7 @@ keywords: WGS84, GCJ02 ,polygon shp
 
    最初，笔者采用遍历polygon shp的每一个要素，获取其IFeature对象，修改其Shape属性里的每一个构成点的xy坐标，结果如下所示：
 
-   ![polygon shp failed](/images/posts/tools/wgs84-correct-to-gcj02-2.png)
+![polygon shp failed](/images/posts/tools/wgs84-correct-to-gcj02-2.png)
 
    这显然不是我们想要的样子。
 
@@ -145,7 +145,7 @@ keywords: WGS84, GCJ02 ,polygon shp
    平移点和线要素的原理与此相同，实践起来也简单一些，此处略去不表。
    至此，我们便可以将坐标系为wgs84的shp数据转变为坐标系为gcj02坐标系的shp数据，叠加在高德地图上（使用Openlayers进行叠加测试）。效果如下：
 
-   ![polygon shp failed](/images/posts/tools/wgs84-correct-to-gcj02-1.png)
+![polygon shp failed](/images/posts/tools/wgs84-correct-to-gcj02-1.png)
 
    存在一定的精度误差，目测在10m之内。
 
