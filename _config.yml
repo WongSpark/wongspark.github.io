@@ -5,8 +5,8 @@ baseurl:
 url: https://wongspark.github.io
 date_format: "ordinal"
 title: Spark
-subtitle: "coder,giser and almost a cooker"
-description: "coder,giser and almost a cooker"
+subtitle: "coder,giser and almost a cook"
+description: "coder,giser and almost a cook"
 keywords: Spark, Spark Wong
 favicon: /favicon.ico
 timezone: Asia/Jinan
@@ -18,7 +18,7 @@ side_bar_repo_limit: 5
 # ---------------- #
 author: Spark Wong
 organization: 自由者之风
-organization_url: 
+organization_url:
 github_username: WongSpark
 location: Jinan, China
 email: www.820767125@qq.com

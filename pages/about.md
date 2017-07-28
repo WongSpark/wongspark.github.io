@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-description: coder,giser and almost a cooker.
+description: coder,giser and almost a cook.
 keywords: Spark Wong
 comments: true
 menu: 关于
