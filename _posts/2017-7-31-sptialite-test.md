@@ -10,19 +10,19 @@ keywords: sptialite
 近期项目涉及到了使用patialite进行空间查询的内容，具体需求是：`使用高德地图的定位功能实时获取用户位置信息，然后到sptialite数据库中查询距离当前位置最近的建筑物面，标绘在地图上，并返回该建筑物的位置信息。`前几篇博客中提到的纠偏实践也是与此相关。
 
 # 参考资料
-##### [sptialite资源列表](http://www.gaia-gis.it/spatialite-2.3/)
+[sptialite资源列表](http://www.gaia-gis.it/spatialite-2.3/)
 `该网址包括我们开发过程中会使用到的大部分资料，包括文档、源码、编译后软件等等`
 
-##### [sptialite cook](http://www.gaia-gis.it/gaia-sins/spatialite-cookbook/index.html)
+[sptialite cook](http://www.gaia-gis.it/gaia-sins/spatialite-cookbook/index.html)
 `sptialite cook，可以理解为sptialite的入门指南。外国人很喜欢把入门指南说成某某某 cook，将学习编程的过程比作做饭，著名的开源js地图软件Openlayers也有与之配套的《Openlayers cook》`
 
-##### [sptialite gui](http://www.gaia-gis.it/gaia-sins/windows-bin-amd64/)
+[sptialite gui](http://www.gaia-gis.it/gaia-sins/windows-bin-amd64/)
 `sptialite的管理界面软件，提供了便捷的导入shp等格式的矢量文件功能，同时也提供了可视化的数据增删改查功能。`
 
-##### [sptialite for android](https://www.gaia-gis.it/fossil/libspatialite/wiki?name=spatialite-android-tutorial)
+[sptialite for android](https://www.gaia-gis.it/fossil/libspatialite/wiki?name=spatialite-android-tutorial)
 `适用andorid的sptialite使用指南。`
 
-##### [sptialite android lib使用指南](http://blog.csdn.net/gispace/article/details/8155503)
+[sptialite android lib使用指南](http://blog.csdn.net/gispace/article/details/8155503)
 `一篇中文的sptialite for android 使用指南，包含了三方包的编译等，很详细，也提供了很多的资源下载。`
 
 # Android Studio使用sptialite for android
