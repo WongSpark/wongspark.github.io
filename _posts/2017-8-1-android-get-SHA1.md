@@ -17,7 +17,7 @@ keywords: Andorid SHA1
 ![](/images/posts/tools/android-get-sha1/1.png)
 
 ## 2·cmd（命令行）中获取SHA1
-打开cmd，cd到keystore所在目录下，或者先打开keystore所在的文件夹，按住`shift+鼠标右键`，选择在此处打开命令行，输入
+打开cmd，cd到keystore所在目录下，或者先打开keystore所在的文件夹，按住`shift+鼠标右键`，选择`在此处打开命令行`，输入
 ```shell
 keytool -list -v -keystore keyStore.jks
 ```
