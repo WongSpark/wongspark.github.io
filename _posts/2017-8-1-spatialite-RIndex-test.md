@@ -31,8 +31,11 @@ order by dis
 两点之间的距离
 
 这样整个语句就很明白了，下面我们来看看执行效果。
+
 ![](/images/posts/tools/spatialite-RIndex-test/1.png)
+
 我们发现，以上的sql语句进行了全表扫描，共扫描了三万余行数据，效率非常低。共耗时4.5s，这对一次查询而言可以说是灾难了。
+
 ![](/images/posts/tools/spatialite-RIndex-test/2.png)
 
 ### 使用R*Index索引
