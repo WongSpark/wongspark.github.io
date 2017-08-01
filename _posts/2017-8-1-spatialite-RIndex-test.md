@@ -57,6 +57,7 @@ spatialite若想利用空间索引，必须使用以下一句sql语句从索引�
     WHERE pkid MATCH RTreeDistWithin(116.944,36.663,0.01) 这一句是利用空间索引表进行一次过滤，筛选出某点周围1km左右的点的id集合。注意，此处的0.01是1/100 degree，大约相当于1000m。
 
 按照如上语句查询，仅耗时0.2s就查询完成。
+
 ![](/images/posts/tools/spatialite-RIndex-test/3.png)
 
 # 总结
