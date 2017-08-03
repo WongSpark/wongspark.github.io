@@ -1,6 +1,6 @@
 ---
 layout: post
-title: spatialite实践
+title: spatialite实践（一）spatialite资源汇总及基础用法
 categories: Tools
 description: 一次关于spatialite的实践
 keywords: spatialite

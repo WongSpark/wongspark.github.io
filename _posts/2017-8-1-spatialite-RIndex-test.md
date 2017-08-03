@@ -1,6 +1,6 @@
 ---
 layout: post
-title: spatialite R*Index 查询实践
+title: spatialite实践（二）spatialite R*Index 查询实践
 categories: Tools
 description: spatialite R*Index 查询实践
 keywords: spatialite R*Index 查询优化
@@ -59,6 +59,29 @@ spatialite若想利用空间索引，必须使用以下一句sql语句从索引�
 按照如上语句查询，仅耗时0.2s就查询完成。
 
 ![](/images/posts/tools/spatialite-RIndex-test/3.png)
+
+### RIndex在海量数据时的表现
+GIS行业总是与大数据量密切相关，不管是poi点数据、房屋面数据、人口数据还是交通路线，在一个市甚至一个省来讲，其体量都是巨大的。因此，GIS对数据库处理海量数据的能力有更高的要求。下面我们来测试一下50w数据量下spatialite的性能表现。
+
+![](/images/posts/tools/spatialite-RIndex-test/4.png)
+
+创建`BUILD_AREA`表，导入shp，用如下sql语句进行查询。
+```sql
+SELECT ROWID, "PK_UID" as id, "Geometry" as geometry,X as x,Y as y,
+	ST_Distance(Transform(MakePoint(x,y,4326),3857),Transform(MakePoint(116.944,36.663,4326),3857)) as dis
+	FROM BUILD_AREA as f
+where f.pk_uid in(
+	SELECT pkid
+    FROM idx_BUILD_AREA_geometry
+    WHERE pkid MATCH RTreeDistWithin(116.944,36.663,0.001)
+)
+order by dis
+```
+运行结果如下：
+
+![](/images/posts/tools/spatialite-RIndex-test/5.png)
+
+我们看到，经过空间索引过滤，即使是48w的数据量，我们进行某点周围一百米的查询仍可以做到0.2s返回。此处不得不感叹工程师们的鬼斧神工以及spatialite索引机制的玄妙。
 
 # 总结
 spatialite的空间查询优化是个需要耐心的工作，其中还有很多不明白的地方，这些语句多是根据`spatialite cook`总结的，其中仍有很多不明白的地方等待探索。
