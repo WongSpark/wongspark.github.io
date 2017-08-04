@@ -28,7 +28,7 @@ keywords: spatialite
 # Android Studio使用spatialite for android
 ## 1·引入三方包
 在如下图所示的红框部分，创建或者拷贝相应的文件夹及文件
-![import lib](/images/posts/tools/spatialite-test/1.png)
+![import lib](/images/posts/tools/sptialite-test/1.png)
 
 ## 2·在程序中获得项目工程assets下的资源
 使用官方提供的`ActivityHelper`和`AssetHelper`两个类，按照如下所示的代码，即可在android程序中访问assets文件夹下的数据库文件。`MapConst`类为自定义的常量类，`MapConst.DB_NAME`代表`.splite`后缀的数据文件的名字，也就是我们的数据库文件。

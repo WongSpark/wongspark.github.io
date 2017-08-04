@@ -49,7 +49,8 @@ keywords: shp，坐标转换
 ![OpenGrok Search and Browse](/images/posts/tools/convert-shp-to-gcj02/8.png)
 
 * 接下来，使用ArcgisEngine开发包，解析shp并修改其数据，完成纠偏。代码如下：
-```
+
+```csharp
 private void movePolygon()
         {
             IMovePolygonFeedback m_MovePolygonFeedback = new MovePolygonFeedbackClass();

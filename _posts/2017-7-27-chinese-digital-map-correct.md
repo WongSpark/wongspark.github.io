@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 国内电子地图坐标系纠偏实践-以高德地图为例 
+title: 国内电子地图坐标系纠偏实践-以高德地图为例
 categories: Tools
 description: 将WGS84坐标系的polygon shp加密为GCJ02坐标系
 keywords: WGS84, GCJ02 ,polygon shp
 ---
 
-一次关于国内电子地图坐标系纠偏实践-以高德地图为例 
+一次关于国内电子地图坐标系纠偏实践-以高德地图为例
 
 ## 背景
 
@@ -45,7 +45,7 @@ keywords: WGS84, GCJ02 ,polygon shp
 
    wgs84转化为gcj02的加密算法在网上可以搜索到，将其封装为方法，输入参数为wgs经纬度坐标，返回gcj02经纬度坐标。代码实现如下（C#）：
 
-   ```C#
+   ```Csharp
    //wgs84转火星坐标系
     public double[] wgs84togcj02(double wgs_lon, double wgs_lat)
     {
@@ -114,7 +114,7 @@ keywords: WGS84, GCJ02 ,polygon shp
 
    该接口提供了Start、MoveTo、Stop三个方法，对应polygon的移动。
 
-   ```C#
+   ```Csharp
    m_MovePolygonFeedback.Start(pFeature.Shape as IPolygon, preLocation);
    m_MovePolygonFeedback.MoveTo(desLocation);
    IGeometry resultGeometry = m_MovePolygonFeedback.Stop() as IGeometry;
@@ -125,7 +125,7 @@ keywords: WGS84, GCJ02 ,polygon shp
    Stop停止平移动作，并返回当前移动的polygon；
    移动完成后，我们需要打开ArcEngine的编辑权限，并保存feature平移的结果。
 
-   ```C#
+   ```Csharp
     pFeature.Shape = resultGeometry;
     IWorkspaceEdit workspaceEdit;
     IWorkspace workspace;
@@ -151,7 +151,7 @@ keywords: WGS84, GCJ02 ,polygon shp
 
    下面附上百度地图数据、GPS数据等的相互转换方法（C#）：
 
-   ```C#
+   ```Csharp
    class ProjectionConvertUtil
     {
         /*
