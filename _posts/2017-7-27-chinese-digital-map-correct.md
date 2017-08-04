@@ -108,7 +108,7 @@ keywords: WGS84, GCJ02 ,polygon shp
 
    此路不通，便另寻他路。通过观察ArcMap编辑polygon的过程，发现移动要素是整体移动的，并且可以通过鼠标的各个事件来操控要素的平移，因而猜测Arcgis可能提供了整体移动要素的方法，经过查看api，果然发现了类似方法：
 
-   ```C#
+   ```csharp
    IMovePolygonFeedback接口
    ```
 
@@ -142,14 +142,14 @@ keywords: WGS84, GCJ02 ,polygon shp
     workspaceEdit.StopEditing(true);
     ```
 
-   平移点和线要素的原理与此相同，实践起来也简单一些，此处略去不表。
-   至此，我们便可以将坐标系为wgs84的shp数据转变为坐标系为gcj02坐标系的shp数据，叠加在高德地图上（使用Openlayers进行叠加测试）。效果如下：
+ 平移点和线要素的原理与此相同，实践起来也简单一些，此处略去不表。
+ 至此，我们便可以将坐标系为wgs84的shp数据转变为坐标系为gcj02坐标系的shp数据，叠加在高德地图上（使用Openlayers进行叠加测试）。效果如下：
 
 ![polygon shp failed](/images/posts/tools/wgs84-correct-to-gcj02-1.png)
 
-   存在一定的精度误差，目测在10m之内。
+ 存在一定的精度误差，目测在10m之内。
 
-   下面附上百度地图数据、GPS数据等的相互转换方法（C#）：
+ 下面附上百度地图数据、GPS数据等的相互转换方法（C#）：
 
    ```Csharp
    class ProjectionConvertUtil
