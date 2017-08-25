@@ -1,5 +1,5 @@
 ---
-layout: arithmetic
+layout: post
 title: 排序算法实践
 categories: arithmetic
 description: 一次关于排序算法的实践
