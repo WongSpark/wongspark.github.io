@@ -49,6 +49,95 @@ function bubbleSort(arr) {
 var arr=[3,44,38,5,47,15,36,26,27,2,46,4,19,50,48];
 console.log(bubbleSort(arr));
 ```
+`2017-8-27补充`
+
+--冒泡排序优化1
+
+以上冒泡排序有可以改进的地方：冒泡排序每一次比较的目的都是为了找出最大值，将其放置到数组最后一位，然后下一次循环比较时，只比较前一次循环长度减一次，最后达到从小到大排列的顺序。
+假设某次循环的后半部分本来就是按照正序排列的，那么我们其实完全没有必要再进行比较，只需记录下最后一次交换数组元素的位置，比较其前面的元素大小即可（没有交换元素说明后面的元素都是按正序排列的），因此可以对冒泡排序进行优化，如下：
+
+```javascript
+function bubbleSort2(arr) {
+    console.time('改进后冒泡排序耗时');
+    var i = arr.length-1;  //初始时,最后位置保持不变
+    while ( i> 0) {
+        var pos= 0; //每趟开始时,无记录交换
+        for (var j= 0; j< i; j++)
+            if (arr[j]> arr[j+1]) {
+                pos= j; //记录交换的位置
+                var tmp = arr[j]; arr[j]=arr[j+1];arr[j+1]=tmp;
+            }
+        i= pos; //为下一趟排序作准备
+     }
+     console.timeEnd('改进后冒泡排序耗时');
+     return arr;
+}
+var arr=[3,44,38,5,47,15,36,26,27,2,46,4,19,50,48];
+console.log(bubbleSort2(arr));
+```
+
+--冒泡排序优化2
+
+传统冒泡排序中每一趟排序操作只能找到一个最大值或最小值,我们考虑利用在每趟排序中进行正向和反向两遍冒泡的方法一次可以得到两个最终值(最大者和最小者) , 从而使排序趟数几乎减少了一半。
+
+```javascript
+function bubbleSort3(arr3) {
+    var low = 0;
+    var high= arr.length-1; //设置变量的初始值
+    var tmp,j;
+    console.time('2.改进后冒泡排序耗时');
+    while (low < high) {
+        for (j= low; j< high; ++j) //正向冒泡,找到最大者
+            if (arr[j]> arr[j+1]) {
+                tmp = arr[j]; arr[j]=arr[j+1];arr[j+1]=tmp;
+            }
+        --high;                 //修改high值, 前移一位
+        for (j=high; j>low; --j) //反向冒泡,找到最小者
+            if (arr[j]<arr[j-1]) {
+                tmp = arr[j]; arr[j]=arr[j-1];arr[j-1]=tmp;
+            }
+        ++low;                  //修改low值,后移一位
+    }
+    console.timeEnd('2.改进后冒泡排序耗时');
+    return arr3;
+}
+var arr=[3,44,38,5,47,15,36,26,27,2,46,4,19,50,48];
+console.log(bubbleSort3(arr));
+```
+
+#选择排序
+
+##算法简介
+
+选择排序是所有排序算法中最容易想到的。其基本思路就是循环比较所有的元素，每一次都找到数组中最小的元素，放置到队首，然后再从未排序的元素中找到最小的，放置到第二位，依次循环，直至排序完成。
+
+![import lib](/images/arithmetic/selection.gif)
+
+##代码实现
+
+```javascript
+function selectionSort(arr) {
+    var len = arr.length;
+    var minIndex, temp;
+    console.time('选择排序耗时');
+    for (var i = 0; i < len - 1; i++) {
+        minIndex = i;
+        for (var j = i + 1; j < len; j++) {
+            if (arr[j] < arr[minIndex]) {     //寻找最小的数
+                minIndex = j;                 //将最小数的索引保存
+            }
+        }
+        temp = arr[i];
+        arr[i] = arr[minIndex];
+        arr[minIndex] = temp;
+    }
+    console.timeEnd('选择排序耗时');
+    return arr;
+}
+var arr=[3,44,38,5,47,15,36,26,27,2,46,4,19,50,48];
+console.log(selectionSort(arr));
+```
+
 
 
 # 结束语
