@@ -140,7 +140,7 @@ keywords: WGS84, GCJ02 ,polygon shp
     //结束编辑
     workspaceEdit.StopEditOperation();
     workspaceEdit.StopEditing(true);
-    ```
+   ```
 
  平移点和线要素的原理与此相同，实践起来也简单一些，此处略去不表。
  至此，我们便可以将坐标系为wgs84的shp数据转变为坐标系为gcj02坐标系的shp数据，叠加在高德地图上（使用Openlayers进行叠加测试）。效果如下所示：
